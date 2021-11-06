@@ -1,4 +1,4 @@
-import { addressCreator } from "./address";
+import { contactCreator } from "./contact";
 import { homeCreator } from "./home";
 import { menuCreator } from "./menu";
 
@@ -29,9 +29,9 @@ const websiteBuilder = (page) => {
         menuCreator();
         page.classList.add('active');
     }
-    if (page.id == 'address-btn' && !page.className.includes('active')) {
+    if (page.id == 'contact-btn' && !page.className.includes('active')) {
         clearContent();
-        addressCreator();
+        contactCreator();
         page.classList.add('active');
     }
 }

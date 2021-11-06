@@ -2,18 +2,20 @@ import imgPadThai from './images/Pad Thai.jpg';
 import imgSingha from './images/singha-beer.jpg';
 import imgThaiRestaurant from './images/home_image.jpg';
 import imgMangoStickyRice from './images/mango_sticky_rice.jpg';
+import imgRestaurantOutside from './images/thai-restaurant.jpg';
 
 
 const textObj = {
-    title: 'Pad Thai Palace',
+    title: 'ChohkDee Thai Palace',
     titleDescription: 'We have the most authentic Thai food in town',
     titleImage: imgThaiRestaurant,
     address: `<h2>Address</h2>
-                <p>1345 Bombardier Way</p>
-                <p>Saline</p>
-                <p>Michigan</p>
-                <p>58539 USA</p>`,
-    others: 'others'
+                <p>4945 Green Avenue</p>
+                <p>San Francisco</p>
+                <p>California 94107</p>
+                `,
+    phone: '510-788-8241',
+    imgRestaurantOutside: imgRestaurantOutside,
 }
 
 const menuObj = {

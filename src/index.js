@@ -2,7 +2,7 @@ import './style.css';
 import {textObj, menuObj} from './text.js';
 import { homeCreator } from './components/home'
 import { menuCreator } from './components/menu';
-import { addressCreator } from './components/address';
+import { contactCreator } from './components/contact';
 import { websiteBuilder } from './components/website';
 
 const activeButton = (button) => {
@@ -17,22 +17,22 @@ const pageCreator = () => {
     const nav = document.createElement('nav');
     const home = document.createElement('ul');
     const menu = document.createElement('ul');
-    const address = document.createElement('ul');
+    const contact = document.createElement('ul');
 
     home.classList.add('nav-item');
     menu.classList.add('nav-item');
-    address.classList.add('nav-item');
+    contact.classList.add('nav-item');
     nav.classList.add('nav-menu');
 
     home.id = 'home-btn';
     menu.id = 'menu-btn';
-    address.id = 'address-btn';
+    contact.id = 'contact-btn';
 
     home.innerText = 'Home';
     menu.innerText = 'Menu';
-    address.innerText = 'Address';
+    contact.innerText = 'Contact';
 
-    nav.append(home, menu, address);
+    nav.append(home, menu, contact);
     content.append(nav);
 
     //navigation paths
@@ -42,7 +42,7 @@ const pageCreator = () => {
     menu.addEventListener('click', (e)=> {
         websiteBuilder(e.target);
     });
-    address.addEventListener('click', (e)=> {
+    contact.addEventListener('click', (e)=> {
         websiteBuilder(e.target);
     });  
 
@@ -53,7 +53,7 @@ const pageCreator = () => {
     const footer = document.createElement('footer');
     footer.classList.add('footer');
     const slogan = document.createElement('p');
-    slogan.innerText = 'call us now under +12316346238'
+    slogan.innerText = `Call us Now ${textObj.phone}`
     footer.appendChild(slogan);
     content.appendChild(footer);
 }
