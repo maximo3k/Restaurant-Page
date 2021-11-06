@@ -1,0 +1,126 @@
+body{
+    /* background-color: #a51931; */
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    background-color: #a51931;
+    color: white;
+}
+.nav-item {
+    cursor: pointer;
+    font-size: large;
+    font-weight: 800;
+}
+.nav-item.active {
+    text-decoration: underline ;
+    text-decoration-color: #2d2a4a ;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+}
+
+.nav-item:hover {
+    text-decoration: underline ;
+    text-decoration-color: #2d2a4a ;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f5f8;
+}
+.header h1,h2{
+    font-size: xx-large;
+    font-weight: 500;
+    color: black;
+}
+.header p{
+    font-size: x-large;
+}
+
+.menu {
+    padding-top: 80px;
+    padding-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f4f5f8;
+}
+.menu p,span{
+    color: white;
+    font-weight: 300;
+    font-size: large;
+}
+.menu h2{
+    color: white;
+    font-weight: 500;
+    font-size: x-large;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 100px;
+    background-color: #2d2a4a;
+
+}
+
+.food-image {
+    width: 300px;
+    height: 300px;
+}
+
+.food-image-box {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.image-text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.price {
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f5f8;
+}
+.address p,h2{
+    margin: 5px;
+    color: black;
+}
+
+.footer {
+    background-color: #a51931;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
